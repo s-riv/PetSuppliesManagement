@@ -1,24 +1,41 @@
-# README
+# Pet Supplies Management DB設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## usersテーブル
+|Column|Type|Options|
+|:-----|----|-------|
+|email|string|null: false|
+|password|string|null: false|
+|username|string|null: false|
+### Association
+- has_many :pets
+- has_many :stocks
 
-Things you may want to cover:
+## petsテーブル
+|Column|Type|Options|
+|:-----|----|-------|
+|petname|string|null: false|
+|user_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :user
+- has_many :stocks
 
-* Ruby version
+## stocksテーブル
+|Column|Type|Options|
+|:-----|----|-------|
+|productname|string|null: false|
+|url|string||
+|pcs|integer||
+|sets_register|integer||
+|sets_current|integer||
+|pcs_daily|integer||
+|last_purchase|datetime||
+|out_stock|datetime||
+|howmany_stock|datetime||
+|price|integer||
+|price_1day|integer||
+|user_id|integer|null: false, foreign_key: true|
+|pet_id|integer|null: false, foreign_key: true|
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+- belongs_to :user
+- belongs_to :pet
