@@ -3,8 +3,8 @@
     Pet Supplies Management
 .Contents
   .Contents__message
-    follow me!
-  = link_to "https://www.facebook.com/", class: "Contents__btn Contents__btn--facebook" do
+  = current_user.name
+  = link_to "https://www.facebook.com/", class: "Contents__btn Contents__btn--Pet" do
     = icon('fas', 'dog',  class: "Contents__btn--icon")
     %span<>
     Pet
@@ -12,7 +12,7 @@
     = icon('fas', 'cat', class: "Contents__btn--icon")
     %span<>
     Twitter
-  = link_to "https://www.instagram.com/", class: "Contents__btn Contents__btn--instagram" do
+  = link_to edit_user_path(current_user), class: "Contents__btn Contents__btn--User" do
     = icon('fas', 'paw', class: "Contents__btn--icon")
     %span<>
-    Stock
+    User

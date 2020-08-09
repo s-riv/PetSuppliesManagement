@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .Header {
   height: 90px;
   border-bottom:20px solid #ffa500;
@@ -34,13 +38,13 @@
     &--icon{
       padding-right:20px;
     }
-    &--facebook{
+    &--Pet{
       background-color: #4169e1;
     }
     &--twitter{
       background-color: #00bfff;
     }
-    &--instagram{
+    &--User{
       background-color: #fc76bf;
     }
   }
