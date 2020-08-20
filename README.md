@@ -1,4 +1,4 @@
-# Pet Supplies Management DB設計
+# pet-supplies-management DB設計
 
 ## usersテーブル
 |Column|Type|Options|
