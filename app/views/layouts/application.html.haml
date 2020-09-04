@@ -2,10 +2,16 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title PetSuppliesManagement
+    %title PetSuppliesManagement 〜ペット用品の在庫管理〜
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application'
   %body
+    -# %script{:src => "stock.js"}
+    .Header
+      .Header__logo
+        %h1 Pet Supplies Management
+        %h2 〜 ペット用品の在庫管理 〜
+
     = yield

@@ -1,35 +1,54 @@
-.Header
-  .Header__logo
-    %h1 Pet Supplies Management
-    %h2 〜 ペット用品の在庫管理 〜
-    
 .Contents
   .Contents__top
     = current_user.name
-    = image_tag "tare1.png", alt: "ペット画像", class: "image", width: "100px", height: "90px"
+    = image_tag "tare1.png", alt: "ペット画像", class: "image", width: "110px", height: "90px"
     .menu
-      = link_to "https://www.facebook.com/", class: "menu__btn" do
-        = icon('fas', 'dog',  class: "menu__btn--icon")
-        %span<>
-        Pet
+      -# = link_to "#", class: "menu__btn" do
+      -#   = icon('fas', 'dog',  class: "menu__btn--icon")
+      -#   %span<>
+      -#   Pet
       = link_to edit_user_path(current_user), class: "menu__btn" do
         = icon('fas', 'user', class: "menu__btn--icon")
         %span<>
         User
-      = link_to "https://www.facebook.com/", class: "menu__btn" do
+      = link_to new_stock_path(current_user), class: "menu__btn" do
         = icon('fas', 'paw',  class: "menu__btn--icon")
         %span<>
-        stock
-      = link_to edit_user_path(current_user), class: "menu__btn" do
-        = icon('fas', 'user-friends', class: "menu__btn--icon")
-        %span<>
-        community
+        Stock
+      -# = link_to edit_user_path(current_user), class: "menu__btn" do
+      -#   = icon('fas', 'user-friends', class: "menu__btn--icon")
+      -#   %span<>
+      -#   community
 
 
   .Contents__stock
-    stocks
-    .Contact
-      %form.Contact__form
-        %input.name_form{placeholder: "nick name", type: "text"}/
-        %textarea.message_form{name: "message", placeholder: "message（商品情報交換など！）"}
-        %input.send{type: "submit", value: "SEND"}/
+    %h1 在庫状況
+    - @stocks.each do |stock|
+      .stock
+        = stock.name
+        　価格:
+        = stock.price
+        円
+        　現在庫数:
+        = stock.sets_current
+        　1日コスト:
+        = stock.price_1day
+        円
+        　在庫がなくなる日:
+        = stock.out_stock
+        -# あと
+        -# = stock.howmany_stock
+        -# 日
+
+
+        %ul.stock__list        
+          %li
+            = link_to '編集', edit_stock_path(stock.id), method: :get
+            = link_to '削除', stock_path(stock.id), method: :delete, data: {confirm: "本当に削除しますか？"}
+        -# - if user_signed_in? && current_user.id == @stock.user_id
+        -# - else
+    -# .Contact
+    -#   %form.Contact__form
+    -#     %input.name_form{placeholder: "nick name", type: "text"}/
+    -#     %textarea.message_form{name: "message", placeholder: "message（商品情報交換など！）"}
+    -#     %input.send{type: "submit", value: "SEND"}/
