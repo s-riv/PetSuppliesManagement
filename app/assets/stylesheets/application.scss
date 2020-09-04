@@ -1,5 +1,11 @@
 @import "reset";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import "stocks";
+@import "index";
 @import "user";
+@import "edit";
+
+body {
+  background-color: #ebebe7;
+  height: 100vh;
+}

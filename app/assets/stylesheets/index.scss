@@ -1,0 +1,106 @@
+.Header {
+  height: 120px;
+  border-bottom:20px solid #97978d;
+  background-color: #e4fc08;
+  color: #97978d;
+  &__logo {
+    text-align: center;
+    font-size: 36px;
+    line-height: 60px;
+  }
+}
+.Contents {
+  height: 100vh;
+  background-color: #ebebe7;
+  
+  &__top {
+    font-size:30px;
+    color:#97978d;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    .image{
+      margin: 5px 10px;
+      border: 3px solid #38aef0;
+      border-radius: 30px;
+    }
+    .menu {
+      color:#97978d;
+      &__btn {
+        display: block;
+        width :60%;
+        margin-left: 50px;
+        border: 1px solid #97978d;
+        border-radius: 10px ;
+        font-size:20px;
+        color:#97978d;
+        background-color: #e4fc08;
+        text-decoration: none;
+        text-align: center;
+        line-height: 40px;
+        display: inline-block;
+        margin-bottom: 5px;
+        &--icon{
+          padding-right:20px;
+        }
+      }    
+    }  
+  }
+
+  &__stock {
+    padding: 20px;
+    color:#38aef0;
+    font-size: 35px;
+    text-align: center;
+    
+    .stock {
+      color: dimgray;
+      font-size: 20px;
+      border: 1px solid #97978d;
+      width: 90%;
+      margin: 30px auto;
+      background-color: #eef5be;
+      border-radius: 10px;
+    }
+    
+    
+
+
+    // .Contact {
+    //   height: 800px;
+    //   background-color: lightgray;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   &__form {
+    //     width: 600px;
+    //   }
+
+    //   .name_form {
+    //     margin: 0 auto 10px;
+    //   }
+      
+    //   .message_form {
+    //     height: 150px;
+    //     margin: 0 auto 30px;
+    //   }
+      
+    //   .name_form,
+    //   .message_form {
+    //     width: 500px;
+    //     padding: 15px;
+    //     border: 1px solid white;
+    //     display: block;
+    //   }
+    //   .send {
+    //     width: 200px;
+    //     margin: 0 auto;
+    //     padding: 15px;
+    //     border: 1px solid white;
+    //     color: white;
+    //     background-color: #6ac7f1;
+    //     display: block;
+    //   }
+    // }
+  }  
+}
