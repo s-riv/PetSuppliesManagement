@@ -17,8 +17,9 @@ Pet Supplies Management
 
 # DEMO
 
-## トップ
-https://gyazo.com/34d27107894fd897568fe7bbb72bb044
+### トップ
+<img width="1440" alt="トップ画面 スクリーンショット 2020-09-08 14 07 49" src="https://user-images.githubusercontent.com/68064826/92438524-f5af5480-f1e3-11ea-9ba5-b0cbf30fabe4.png">
+
 
 ## 在庫編集
 https://gyazo.com/189ef05e7ebbe1c48018abf1aace9555
