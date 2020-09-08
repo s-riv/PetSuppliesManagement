@@ -6,10 +6,10 @@
       = f.label :url,"url"
       = f.url_field :url, placeholder: "（購入サイト等url）"
     .Form__stocks
-      = f.label :sets_register,"登録在庫数(パッケージ)"
-      = f.number_field :sets_register
-      = f.label :sets_current,"　現在庫数(パッケージ)"
-      = f.number_field :sets_current
+      -# = f.label :sets_register,"登録在庫数(パッケージ)"
+      -# = f.number_field :sets_register
+      = f.label :sets_current,"在庫数(パッケージ)"
+      = f.number_field :sets_current, id: "sets_current"
       = f.label :pcs,"　何個入"
       = f.number_field :pcs, id: "pcs"
       = f.label :pcs_daily,"　1日の使用個数"
@@ -18,7 +18,7 @@
       -# = f.number_field :pcs_current, id: "pcs_current"
     .Form__price
       = f.label :price,"価格(円)"
-      = f.text_field :price, placeholder: "（半角数字のみ）", id: "price"
+      = f.text_field :price, placeholder: "（半角数字）", id: "price"
       = f.label :price_1day,"　1日コスト(円)"
       = f.text_field :price_1day, placeholder: "（自動計算）", id:"price_1day"
 
