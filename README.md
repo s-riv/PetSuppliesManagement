@@ -20,8 +20,8 @@ Pet Supplies Management
 ### トップ
 <img width="1440" alt="トップ画面 スクリーンショット 2020-09-08 14 07 49" src="https://user-images.githubusercontent.com/68064826/92438524-f5af5480-f1e3-11ea-9ba5-b0cbf30fabe4.png">
 
-### 在庫編集
-<img width="1440" alt="在庫編集画面 スクリーンショット 2020-09-08 15 37 03" src="https://user-images.githubusercontent.com/68064826/92441690-9ce2ba80-f1e9-11ea-9224-14e3d6dd7801.png">
+### 在庫登録
+![在庫登録画面収録](https://user-images.githubusercontent.com/68064826/92448914-3f07a000-f1f4-11ea-9ab9-26208c9def94.gif)
 
 ### アカウント編集
 <img width="1440" alt="アカウント編集画面 スクリーンショット 2020-09-08 14 05 43" src="https://user-images.githubusercontent.com/68064826/92439090-204ddd00-f1e5-11ea-9dcd-0e8cf92210e2.png">
