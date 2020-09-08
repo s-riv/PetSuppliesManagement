@@ -28,9 +28,9 @@ https://gyazo.com/45146a1427f84ad8e467d81db4315aaf
 
 
 # 実装予定の内容
-- 自動計算機能
-- 画像登録機能と表示箇所の追加
-- 商品詳細と入力フォームのビューを見やすく
+- 画像登録機能と画像表示箇所の追加
+- 非同期の導入
+- 商品詳細と入力フォームのビューを微調整（調整箇所の模索）
 - その他アップデート箇所の模索
 
 
@@ -60,7 +60,7 @@ https://gyazo.com/45146a1427f84ad8e467d81db4315aaf
 |price_1day|integer||
 |last_purchase|datetime||
 |out_stock|datetime||
-|howmany_stock|datetime||
+|how＿many_stock|datetime||
 |user_id|integer|null: false, foreign_key: true|
 
 ### Association
