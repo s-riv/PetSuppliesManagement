@@ -1,0 +1,35 @@
+.Form
+  = form_with model: @stock, local: true do |f|
+    .Form__product
+      = f.label :name, "商品名"
+      = f.text_field :name
+      = f.label :url,"url"
+      = f.url_field :url, placeholder: "（購入サイト等url）"
+    .Form__stocks
+      -# = f.label :sets_register,"登録在庫数(パッケージ)"
+      -# = f.number_field :sets_register
+      = f.label :sets_current,"在庫数(パッケージ)"
+      = f.number_field :sets_current, id: "sets_current"
+      = f.label :pcs,"　何個入"
+      = f.number_field :pcs, id: "pcs"
+      = f.label :pcs_daily,"　1日の使用個数"
+      = f.number_field :pcs_daily, id: "pcs_daily"
+      -# = f.label :pcs_current,"現在庫個数"
+      -# = f.number_field :pcs_current, id: "pcs_current"
+    .Form__price
+      = f.label :price,"価格(円)"
+      = f.text_field :price, placeholder: "（半角数字）", id: "price"
+      = f.label :price_1day,"　1日コスト(円)"
+      = f.text_field :price_1day, placeholder: "（自動計算）", id:"price_1day"
+
+    .Form__last_purchase
+      = f.label :last_purchase,"直近購入日(カウント開始日)"
+      = f.date_field :last_purchase, id: "last_purchase"
+    .Form__out_stock
+      = f.label :out_stock,"在庫がなくなる日"
+      = f.date_field :out_stock, id:"out_stock"
+    -# .Form__howmany_stock
+    -#   = f.label :howmany_stock,"在庫あと何日"
+    -#   = f.number_field :howmany_stock, id:"howmany_stock"
+    .Form__register
+      = f.submit "登録"
