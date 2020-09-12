@@ -154,6 +154,32 @@ $(function() {
     $("#price_1day").val(pricePerDay);  //計算結果の上記変数pricePerDayを.val()内に代入する
   });
 
+  $('#pcs').change(function() { //フォーム内id="pcs"の数値を入力し終わった時に変化するchangeイベントを使用
+    let pcs      = $("#pcs").val(); //変数に.val()メソッドで代入するのちにそれをInteger型に変更する
+    let pcsDaily = $("#pcs_daily").val();
+    let price    = $("#price").val();
+    pcs = parseInt(pcs); //Integer型に変更 //上記letにより再代入可能にしている
+    pcsDaily = parseInt(pcsDaily);
+    price = parseInt(price);
+
+    const pricePerDay = price * pcsDaily / pcs; //先ほど代入したものの変数をそのまま計算する
+
+    $("#price_1day").val(pricePerDay);  //計算結果の上記変数pricePerDayを.val()内に代入する
+  });
+
+  $('#pcs_daily').change(function() { //フォーム内id="pcs_daily"の数値を入力し終わった時に変化するchangeイベントを使用
+    let pcs      = $("#pcs").val(); //変数に.val()メソッドで代入するのちにそれをInteger型に変更する
+    let pcsDaily = $("#pcs_daily").val();
+    let price    = $("#price").val();
+    pcs = parseInt(pcs); //Integer型に変更 //上記letにより再代入可能にしている
+    pcsDaily = parseInt(pcsDaily);
+    price = parseInt(price);
+
+    const pricePerDay = price * pcsDaily / pcs; //先ほど代入したものの変数をそのまま計算する
+
+    $("#price_1day").val(pricePerDay);  //計算結果の上記変数pricePerDayを.val()内に代入する
+  });
+
   $('#last_purchase').change(function() {
     console.log('計算前');
 
