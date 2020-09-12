@@ -17,19 +17,18 @@ Pet Supplies Management
 
 # DEMO
 
-## トップ
-https://gyazo.com/34d27107894fd897568fe7bbb72bb044
+### トップ
+<img width="1440" alt="トップ画面 スクリーンショット 2020-09-08 14 07 49" src="https://user-images.githubusercontent.com/68064826/92438524-f5af5480-f1e3-11ea-9ba5-b0cbf30fabe4.png">
 
-## 在庫編集
-https://gyazo.com/189ef05e7ebbe1c48018abf1aace9555
+### 在庫登録
+![在庫登録画面収録](https://user-images.githubusercontent.com/68064826/92448914-3f07a000-f1f4-11ea-9ab9-26208c9def94.gif)
 
-## アカウント編集
-https://gyazo.com/45146a1427f84ad8e467d81db4315aaf
+### アカウント編集
+<img width="1440" alt="アカウント編集画面 スクリーンショット 2020-09-08 14 05 43" src="https://user-images.githubusercontent.com/68064826/92439090-204ddd00-f1e5-11ea-9dcd-0e8cf92210e2.png">
 
 
 # 実装予定の内容
 - 画像登録機能と画像表示箇所の追加
-- 非同期の導入
 - 商品詳細と入力フォームのビューを微調整（調整箇所の模索）
 - その他アップデート箇所の模索
 
