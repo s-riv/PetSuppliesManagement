@@ -9,7 +9,6 @@ class StocksController < ApplicationController
   end
 
   def create
-    # binding.pry
     @stock = Stock.new(stock_params)
     if @stock.save
       respond_to do |format|
@@ -18,7 +17,7 @@ class StocksController < ApplicationController
       end
     else
       @stocks = Stock.includes(:user)
-      flash.now[:alert] = '在庫情報を入力してください。'
+      flash.now[:alert] = '商品名を入力してください。'
       render :new
     end
   end

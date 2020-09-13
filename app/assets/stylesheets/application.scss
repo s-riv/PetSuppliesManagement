@@ -8,4 +8,17 @@
 body {
   background-color: #ebebe7;
   height: 100vh;
+  
+  .notifications {
+    color: white;
+    text-align: center;  
+  
+    .notice {
+      background-color: lightBlue;
+    }
+  
+    .alert {
+      background-color: orange;
+    }
+  }
 }
